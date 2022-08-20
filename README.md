@@ -1,6 +1,6 @@
 # Xcode - Source Editor Extension
 用了一段时间`Tools for Xcode`，感觉生成代码功能挺好用的，很好奇它是如何实现的。搜索一番，最后找到了`Source Editor Extension`。
-<div align=center><img width="400" src="https://github.com/Talon2333/OwnTools/blob/main/Images/Tools%20for%20Xcode.png" alt="Tools for Xcode"/></div>
+<div align=center><img width="600" src="https://github.com/Talon2333/OwnTools/blob/main/Images/Tools%20for%20Xcode.png" alt="Tools for Xcode"/></div>
 
 此文只是大致梳理了`Source Editor Extension`的使用流程及遇到的问题，详细内容可查看苹果官方文档[XcodeKit](https://developer.apple.com/documentation/xcodekit?language=objc)，另外本文最后实现了一个自定义生成`Getter`的demo。
 
@@ -22,7 +22,7 @@
 ### 添加可自定义的行为
 #### 添加命令
 在添加的`extension`目录下找到`info`文件，并在`XCSourceEditorCommandDefinitions`下添加`item`。
-![XCSourceEditorCommandDefinitions](https://github.com/Talon2333/OwnTools/blob/main/Images/XCSourceEditorCommandDefinitions.png)
+<div align=center><img width="600" src="https://github.com/Talon2333/OwnTools/blob/main/Images/XCSourceEditorCommandDefinitions.png"/></div>
 
 #### 实现命令功能
 在`SourceEditorCommand`文件中，通过填写方法的主体，将可自定义的行为添加到您的源代码编辑器扩展。以下示例显示了一个反转源代码编辑器中的行顺序的命令：`performCommandWithInvocation:completionHandler:`
