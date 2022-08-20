@@ -1,6 +1,6 @@
 # Xcode - Source Editor Extension
 用了一段时间`Tools for Xcode`，感觉生成代码功能挺好用的，很好奇它是如何实现的。搜索一番，最后找到了`Source Editor Extension`。
-![Tools for Xcode](https://github.com/Talon2333/OwnTools/blob/main/Images/Tools%20for%20Xcode.png)
+![Tools for Xcode-w300](https://github.com/Talon2333/OwnTools/blob/main/Images/Tools%20for%20Xcode.png)
 
 此文只是大致梳理了`Source Editor Extension`的使用流程及遇到的问题，详细内容可查看苹果官方文档[XcodeKit](https://developer.apple.com/documentation/xcodekit?language=objc)，另外本文最后实现了一个自定义生成`Getter`的demo。
 
@@ -89,7 +89,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 
 ## 最后
 ### 参考文章
-苹果官方文档 [XcodeKit](https://developer.apple.com/documentation/xcodekit?language=objc)
-[Xcode Source Editor Extension 创建入门](https://www.jianshu.com/p/8c7ca1a35574)
-[Xcode - Source Editor Extension](https://juejin.cn/post/6915295119700656141)
-[给自己的Xcode写个自动生成代码小插件](https://www.jianshu.com/p/06f495aaf973)
+* 苹果官方文档 [XcodeKit](https://developer.apple.com/documentation/xcodekit?language=objc)
+* [Xcode Source Editor Extension 创建入门](https://www.jianshu.com/p/8c7ca1a35574)
+* [Xcode - Source Editor Extension](https://juejin.cn/post/6915295119700656141)
+* [给自己的Xcode写个自动生成代码小插件](https://www.jianshu.com/p/06f495aaf973)
