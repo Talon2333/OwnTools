@@ -22,7 +22,7 @@
 ### 添加可自定义的行为
 #### 添加命令
 在添加的`extension`目录下找到`info`文件，并在`XCSourceEditorCommandDefinitions`下添加`item`。
-<div align=center><img width="600" src="https://github.com/Talon2333/OwnTools/blob/main/Images/XCSourceEditorCommandDefinitions.png"/></div>
+<div align=center><img width="800" src="https://github.com/Talon2333/OwnTools/blob/main/Images/XCSourceEditorCommandDefinitions.png"/></div>
 
 #### 实现命令功能
 在`SourceEditorCommand`文件中，通过填写方法的主体，将可自定义的行为添加到您的源代码编辑器扩展。以下示例显示了一个反转源代码编辑器中的行顺序的命令：`performCommandWithInvocation:completionHandler:`
@@ -47,11 +47,11 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 
 ### 测试源代码编辑器扩展
 选择扩展方案后，通过运行`extension`来测试您正在开发的源代码编辑器扩展。将出现一个对话框，要求您选择要运行的应用程序。
-![Run Xcode](https://github.com/Talon2333/OwnTools/blob/main/Images/Run%20Xcode.jpg)
+<div align=center><img width="600" src="https://github.com/Talon2333/OwnTools/blob/main/Images/Run%20Xcode.jpg"/></div>
 选择 Xcode，您的源代码编辑器扩展在 Xcode 的第二个实例中初始化。您可以根据应用程序图标的背景颜色来区分 Xcode 的两个实例。运行源代码编辑器扩展的 Xcode 实例具有黑色背景，而不是第一个实例的浅蓝色背景。
-![Xcode](https://github.com/Talon2333/OwnTools/blob/main/Images/Xcode.jpg)
+<div align=center><img width="200" src="https://github.com/Talon2333/OwnTools/blob/main/Images/Xcode.jpg"/></div>
 要测试您的扩展定义的命令，请在 Xcode 的测试实例中打开一个源文件。扩展程序定义的所有命令都出现在`Editor`中，嵌套在扩展程序的名称下，如下图：
-![OwnToolsExtension](https://github.com/Talon2333/OwnTools/blob/main/Images/OwnToolsExtension.png)
+<div align=center><img width="800" src="https://github.com/Talon2333/OwnTools/blob/main/Images/OwnToolsExtension.png"/></div>
 
 选择一个命令后，SourceEditorCommand类中的`performCommandWithInvocation:completionHandler:`方法将会被调用。通过参数`XCSourceEditorCommandInvocation`中的`commandIdentifier`来区分不用的命令。
 
