@@ -60,10 +60,10 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 ## 踩坑
 #### 1.运行黑色Xcode后，Editor下没有出现定义的命令
 首先确认info文件中的命令配置无误后，可尝试把XcodeKit.framework删除后重新导入。
-![XcodeKit](https://github.com/Talon2333/OwnTools/blob/main/Images/XcodeKit.png)
+<div align=center><img width="800" src="https://github.com/Talon2333/OwnTools/blob/main/Images/XcodeKit.png"/></div>
 
 然后再确认下设置扩展中，您的应用程序是否选中`Xcode Source Editor`
-![Setting](https://github.com/Talon2333/OwnTools/blob/main/Images/Setting.png)
+<div align=center><img width="800" src="https://github.com/Talon2333/OwnTools/blob/main/Images/Setting.png"/></div>
 
 
 ## 实战——实现自定义Getter生成工具
@@ -77,7 +77,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 
 ### 自定义Getter介绍
 将对应类的`Getter`模版拷贝到上方的输入框中，点击`添加`按钮即可添加。当类已添加时，会覆盖模版。
-![OwnTools](https://github.com/Talon2333/OwnTools/blob/main/Images/OwnTools.png)
+<div align=center><img width="800" src="https://github.com/Talon2333/OwnTools/blob/main/Images/OwnTools.png"/></div>
 
 ### 实现大致流程
 * 获取到选中的行，然后遍历处理每一行
