@@ -70,10 +70,10 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 ### 使用流程
 选中属性后，点击`Editor`下配置的`Getter`生成命令（可配置快捷键），便可自动生成对应的`Getter`方法，生成的`Getter`方法模版可自定义。
 
-![CustomGetter1](https://github.com/Talon2333/OwnTools/blob/main/Images/CustomGetter1.png)|
-![CustomGetter2](https://github.com/Talon2333/OwnTools/blob/main/Images/CustomGetter2.png)|
-![CustomGetter3](https://github.com/Talon2333/OwnTools/blob/main/Images/CustomGetter3.png)
+
+![CustomGetter1](https://github.com/Talon2333/OwnTools/blob/main/Images/CustomGetter1.png)|![CustomGetter2](https://github.com/Talon2333/OwnTools/blob/main/Images/CustomGetter2.png)|![CustomGetter3](https://github.com/Talon2333/OwnTools/blob/main/Images/CustomGetter3.png)
 ---|---|---
+
 
 ### 自定义Getter介绍
 将对应类的`Getter`模版拷贝到上方的输入框中，点击`添加`按钮即可添加。当类已添加时，会覆盖模版。
