@@ -6,11 +6,11 @@
 
 
 ## 创建一个源代码编辑器扩展
-您可以使用 `XcodeKit` 在 `Xcode` 中构建源代码编辑器的扩展。源代码编辑器扩展可以读取和修改源文件的内容，以及读取和修改编辑器中的当前选择的文本。
+您可以使用 `XcodeKit` 在 Xcode 中构建源代码编辑器的扩展。源代码编辑器扩展可以读取和修改源文件的内容，以及读取和修改编辑器中的当前选择的文本。
 
 
 ### 在 Xcode 中创建一个新的 macOS 项目
-要创建源代码编辑器扩展，首先在 `Xcode` 中创建一个新的 `macOS` 项目。将一个新的 `Xcode Source Editor Extension` 目标添加到您的项目中，如下图所示，并在出现提示时将其激活。
+要创建源代码编辑器扩展，首先在 Xcode 中创建一个新的 `macOS` 项目。将一个新的 `Xcode Source Editor Extension` 目标添加到您的项目中，如下图所示，并在出现提示时将其激活。
 
 ![Create Extension](https://github.com/Talon2333/OwnTools/blob/main/Images/Create%20Extension.jpg)|![Activate](https://github.com/Talon2333/OwnTools/blob/main/Images/Activate.png)
 ---|---
@@ -85,7 +85,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 * 根据获取的`类名`找到对应的`Getter`方法模版
 * 替换模版中的`类名`和`属性名`
 
-源码已上传Github，[OwnTools](https://github.com/Talon2333/OwnTools)。
+简书地址，[Xcode - Source Editor Extension](https://www.jianshu.com/p/b57bc6f5ed0b)。
 
 ## 最后
 ### 参考文章
