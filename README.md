@@ -1,4 +1,4 @@
-# Xcode - Source Editor Extension
+# Xcode Source Editor Extension
 用了一段时间`Tools for Xcode`，感觉生成代码功能挺好用的，很好奇它是如何实现的。搜索一番，最后找到了`Source Editor Extension`。
 <div align=center><img width="600" src="https://github.com/Talon2333/OwnTools/blob/main/Images/Tools%20for%20Xcode.png" alt="Tools for Xcode"/></div>
 
@@ -85,7 +85,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 * 根据获取的`类名`找到对应的`Getter`方法模版
 * 替换模版中的`类名`和`属性名`
 
-简书地址，[Xcode - Source Editor Extension](https://www.jianshu.com/p/b57bc6f5ed0b)。
+简书地址，[Xcode Source Editor Extension](https://www.jianshu.com/p/b57bc6f5ed0b)。
 
 ## 最后
 ### 参考文章
